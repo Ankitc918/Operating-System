@@ -1,0 +1,113 @@
+<html><title> Resume</title>
+<head>
+<script>
+function fun()
+{
+ if(document.frm.e[0].checked)  
+   { 
+    alert("your gender is:"+document.frm.e[0].value);
+   }
+if(document.frm.e[1].checked)
+   {
+   alert("your gender is:"+document.frm.e[1].value);
+    }
+s="your hobbbies:";	
+
+	if(document.frm.p[0].checked)
+	{s=s+document.frm.p[0].value+",";}
+	if(document.frm.p[1].checked)
+	{s=s+document.frm.p[1].value+",";}	
+	if(document.frm.p[2].checked)
+	{s=s+document.frm.p[2].value+",";}
+	if(document.frm.p[3].checked)
+	{s=s+document.frm.p[3].value+",";}
+alert(s);
+i=document.frm.state.selectedIndex;
+alert("your state is :"+document.frm.state.options[i].value);
+j=document.frm.city.selectedIndex;
+alert("your city is :"+document.frm.city.options[i].value);
+
+
+}
+</script>
+</head>
+<body background="images\bg.jpg"><div id="menu" align="left" >
+<a href="homepage.html"><img src="images\home.jpg" height=30px width=50px></a>
+</div>
+<center>
+<form name="frm">
+<h1 align="center"><marquee behavior="right" width=38%><font face="Berlin Sans FB" font color=green size=5px>Enter Your Resume</font></marquee></h1>
+
+<table height=100px>
+<tr>
+<td><font face="Berlin Sans FB" font size=5px>Name</td>
+<td><input type="text" name="k"></td></tr>
+<tr>
+<td><font face="Berlin Sans FB" font size=5px>Father Name</td>
+<td><input type="text" name="k"></textarea></td>
+</tr>
+<tr>
+<td><font face="Berlin Sans FB" font size=5px>Mother Name</td>
+<td><input type="text" name="k"></textarea></td>
+</tr>
+<tr>
+<td><font face="Berlin Sans FB" font size=5px>Adress</td>
+<td><textarea rows=3></textarea></td>
+</tr>
+<tr>
+<td><font face="Berlin Sans FB" font size=5px>Institute Name</td>
+<td><input type="text" name="k"></textarea></td>
+</tr>
+<tr>
+<td><font face="Berlin Sans FB" font size=5px>Select State</td>
+<td><select name="state">
+                        <option value=""> </option>
+			<option value="Uttarakhand">uttarakhand</option>
+			<option value="Gujrat">gujrat</option>
+			<option value="Jharkhand">jharkhand</option>
+			<option value="Dlhi">delhi</option>
+			<option value="Kashmir">kashmir/option>
+			<option value="MadhyaPardesh">madhya pardesh</option>
+			<option value="Chattishgarh">chattisgarh</option>
+			<option value="Punjab">punjab</option>
+			<option value="Hariyana">hariyana</option></select></td></tr>
+<tr>
+<td><font face="Berlin Sans FB" font size=5px>Select City</td>
+<td><select name="city">
+                        <option value=""> </option>
+			<option value="Bazpur">Bazpur</option>
+			<option value="Haldwani">Haldwani</option>
+			<option value="Ranikhet">Ranikhet</option>
+			<option value="Kashipur">Kashipur</option>
+			<option value="Jaspur">Jaspur</option>
+			<option value="Tanakpur">Tanakpur</option>
+			<option value="Khatima">Khatima</option>
+			<option value="Champawat">Champawat</option>
+			<option value="Nainital">Nainital</option></select></td></tr>
+<tr>
+<td><font face="Berlin Sans FB" font size=5px>Pin</td>
+<td><input type="text" name="k" size=6></td>
+
+
+
+<tr>
+<td><font face="Berlin Sans FB" font size=5px>Select Gender</td>
+<td><input type="radio" name="e" value="Male">Male<br>
+<input type="radio" name="e" value="Female">female</td></tr>
+<tr>
+<td><font face="Berlin Sans FB" font size=5px>Hobbies</td>
+<td>
+<input type="checkbox" name="p" value="Reading">Reading
+		<input type="checkbox" name="p" value="Internet">Internet
+		<input type="checkbox" name="p" value="HTML">Html
+		<input type="checkbox" name="p" value="C++">c++
+
+
+</td></tr>
+<tr><td><input type="button" value="Submit" onClick="fun()">
+</form>
+
+
+</center>
+</body>
+</html>
